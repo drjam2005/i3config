@@ -151,7 +151,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
-# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+# restart i3 inplace (preserves your layout/'session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 #bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
@@ -202,7 +202,7 @@ exec feh --bg-scale ~/Pictures/lain.jpg
 exec --no-startup-id ~/Scripts/cmus_status.sh
 exec_always --no-startup-ud xset -b
 exec_always xset b off
-exec_always "pgrep polybar >/dev/null 2>&1 && killall polybar && polybar|| polybar"
-exec_always picom --config ~/.config/picom/picom.conf
+exec_always "pgrep polybar >/dev/null 2>&1 && killall polybar && polybar --config=~/.config/i3/polybar/config.ini || polybar --config=~/.config/i3/polybar/config.ini"
+exec_always picom --config ~/.config/i3/picom/picom.conf
 exec_always dunst
 exec_always "pgrep dunst >/dev/null 2>&1 && killall dunst && dunst --config ~/.config/dunst/dunstrc|| --no-startup-id dunst --config ~/.config/dunst/dunstrc && dunst"
