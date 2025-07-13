@@ -1,0 +1,86 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+      "type": "auto",
+      "source": "~/Pictures/lain_ff.png",
+      "width": 30,
+      "height": 14,
+      "padding": {
+	  "top": 0,
+	  "left": 0,
+	  "right": 0
+      }
+  },
+  "modules": [
+      {
+	  "type": "title",
+	  "format": "{user-name-colored}@{host-name}",
+	  "keyColor": "#888888"
+      },
+      {
+	  "type": "separator",
+	  "key": "SEPARATOR",
+	  "format": ""
+      },
+      {
+	  "type": "os",
+	  "key": "OS",
+	  "format": "{pretty-name}"
+      },
+      {
+	  "type": "host",
+	  "key": "HOST",
+	  "format": "{family}"
+      },
+      {
+	  "type": "kernel",
+	  "key": "KERNEL",
+	  "format": "{sysname}"
+      },
+      {
+	  "type": "uptime",
+	  "key": "UPTIME",
+	  "format": ""
+      },
+      {
+	  "type": "wm",
+	  "key": "WM",
+	  "format": "{pretty-name}"
+      },
+      {
+	  "type": "terminal",
+	  "key": "TERMINAL",
+	  "format": "{pretty-name}"
+      },
+      {
+	  "type": "cpu",
+	  "key": "CPU",
+	  "format": "{cores-physical}/{cores-logical}cores {freq-base}"
+      },
+      {
+	  "type": "gpu",
+	  "key": "GPU",
+	  "format": ""
+      },
+      {
+	  "type": "memory",
+	  "key": "MEMORY",
+	  "format": "{used} / {total}"
+      },
+      {
+	  "type": "disk",
+	  "key": "DISK",
+	  "format": "{size-used} / {size-total}"
+      },
+      {
+	  "type": "battery",
+	  "key": "BATTERY",
+	  "outputColor": "blue",
+	  "format": "{#15}{capacity}{#}"
+      },
+    "break",
+    {
+	"type": "colors",
+    } 
+  ]
+}

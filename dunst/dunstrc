@@ -1,0 +1,9 @@
+[global]
+    monitor = 0
+    follow = mouse
+    scale = 0
+    width = (0, 20)
+    corner_radius = 10
+    height = (0, 20)
+    origin = top-right
+    offset = (40,40)

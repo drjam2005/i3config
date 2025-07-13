@@ -203,5 +203,4 @@ exec_always --no-startup-ud xset -b
 exec_always xset b off
 exec_always "pgrep polybar >/dev/null 2>&1 && killall polybar && polybar --config=~/.config/i3/polybar/config.ini || polybar --config=~/.config/i3/polybar/config.ini"
 exec_always picom --config ~/.config/i3/picom/picom.conf
-exec_always dunst
-exec_always "pgrep dunst >/dev/null 2>&1 && killall dunst && dunst --config ~/.config/dunst/dunstrc|| --no-startup-id dunst --config ~/.config/dunst/dunstrc && dunst"
+exec_always "pgrep dunst >/dev/null 2>&1 && pkill dunst && dunst --config ~/.config/dunst/dunstrc|| --no-startup-id dunst --config ~/.config/dunst/dunstrc && dunst --config ~/.config/dunst/dunstrc"
