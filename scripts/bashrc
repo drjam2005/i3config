@@ -1,0 +1,16 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+alias ff='fastfetch --color "#ffb0ce" --color-output "#bbbbbb" --config ~/.config/i3/fastfetch/config.jsonc'
+alias nvimConfig='nvim ~/.config/nvim'
+alias grep='grep --color=auto'
+alias cmus='~/.Scripts/cmus_thing.sh & cmus'
+ff
+PS1='[\u@\h \W]\$ '
+
+eval "$(starship init bash)"

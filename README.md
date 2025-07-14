@@ -1,3 +1,3 @@
 # some stuff required
 
-qutebrowser feh xrandr polybar picom thunar rofi dunst cmus
+qutebrowser feh xrandr polybar picom thunar rofi dunst cmus starship
