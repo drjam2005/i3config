@@ -69,23 +69,11 @@ bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
 
-# alternatively, you can use the cursor keys:
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-bindsym $mod+Up focus up
-bindsym $mod+Right focus right
-
 # move focused window
 bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
-
-# alternatively, you can use the cursor keys:
-bindsym $mod+Shift+Left move left
-bindsym $mod+Shift+Down move down
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
 bindsym $mod+Shift+v split h
@@ -193,14 +181,15 @@ bindsym $mod+Shift+w exec qutebrowser -p
 bindsym $mod+Shift+d exec discord
 bindsym $mod+Shift+s exec flameshot gui
 bindsym $mod+r exec rofi -show drun
+bindsym $mod+period exec rofi -show emoji
 bindsym $mod+e exec thunar
 
 exec xrandr --output eDP-1 --mode 1280x720
 # exec feh --bg-scale ~/Pictures/background.jpg
-exec feh --bg-scale ~/Pictures/lain.png
+exec feh --bg-scale ~/.config/i3/images/background.png
 exec --no-startup-id ~/Scripts/cmus_status.sh
 exec_always --no-startup-ud xset -b
 exec_always xset b off
 exec_always "pgrep polybar >/dev/null 2>&1 && killall polybar && polybar --config=~/.config/i3/polybar/config.ini || polybar --config=~/.config/i3/polybar/config.ini"
 exec_always picom --config ~/.config/i3/picom/picom.conf
-exec_always "pgrep dunst >/dev/null 2>&1 && pkill dunst && dunst --config ~/.config/dunst/dunstrc|| --no-startup-id dunst --config ~/.config/dunst/dunstrc && dunst --config ~/.config/dunst/dunstrc"
+exec_always "pgrep dunst >/dev/null 2>&1 && pkill dunst && dunst --config ~/.config/i3/dunst/dunstrc|| --no-startup-id dunst --config ~/.config/i3/dunst/dunstrc && dunst --config ~/.config/dunst/dunstrc"

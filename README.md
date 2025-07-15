@@ -1,3 +1,4 @@
 # some stuff required
 
-qutebrowser feh xrandr polybar picom thunar rofi dunst cmus starship
+(maybe better using the AUR)
+qutebrowser feh xrandr polybar picom(from gh/yshui) thunar rofi dunst cmus starship
