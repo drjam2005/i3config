@@ -1,0 +1,78 @@
+palette = "grey"
+format = """$username$hostname$directory$git_branch$fill(rose)$time$line_break$character"""
+
+[character]
+success_symbol = "[@](bold grey)"
+error_symbol = "[@](bold red)"
+
+[fill]
+symbol = '─'
+style = '#222222'
+
+[cmd_duration]
+min_time = 10000
+
+[time]
+disabled = false
+time_format = "%F %T"
+style = "#444444"
+format = '[$time]($style)'
+
+[python]
+symbol = "py "
+
+[package]
+symbol = "package "
+style = "#ffb0ce"
+
+[git_branch]
+symbol = "git "
+
+[git_status]
+disabled = true
+
+[aws]
+symbol = "aws "
+
+[terraform]
+symbol = "tf "
+style = "bold #ffb0ce"
+
+[palettes.grey]
+grey = "#777777"
+rose = "#ffb0ce"
+none = "#ffb0ce"
+white = "#ffb0ce"
+rosewater = "#ffb0ce"
+flamingo = "#ffb0ce"
+pink = "#ffb0ce"
+mauve = "#ffb0ce"
+maroon = "#ffb0ce"
+peach = "#ffb0ce"
+sky = "#ffb0ce"
+sapphire = "#ffb0ce"
+blue = "#ffb0ce"
+lavender = "#ffb0ce"
+text = "#ffb0ce"
+subtext1 = "#ffb0ce"
+subtext0 = "#ffb0ce"
+overlay2 = "#ffb0ce"
+overlay1 = "#ffb0ce"
+overlay0 = "#ffb0ce"
+surface2 = "#ffb0ce"
+surface1 = "#ffb0ce"
+surface0 = "#ffb0ce"
+base = "#ffb0ce"
+mantle = "#ffb0ce"
+crust = "#ffb0ce"
+background = "#ffb0ce"
+current_line = "#ffb0ce"
+foreground = "#ffb0ce"
+comment = "#ffb0ce"
+cyan = "#ffb0ce"
+green = "#ffb0ce"
+orange = "#ffb0ce"
+purple = "#ffb0ce"
+red = "#ffb0ce"
+yellow = "#ffb0ce"
+
