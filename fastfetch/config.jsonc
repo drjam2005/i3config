@@ -3,8 +3,8 @@
   "logo": {
       "type": "auto",
       "source": "/home/james/.config/i3/fastfetch/lain.jpg",
-      "width": 30,
-      "height": 15,
+      "width": 32,
+      "height": 13,
       "padding": {
 	  "top": 0,
 	  "left": 0,
@@ -77,10 +77,6 @@
 	  "key": "BATTERY",
 	  "outputColor": "blue",
 	  "format": "{#15}{capacity}{#}"
-      },
-    "break",
-    {
-	"type": "colors",
-    } 
+      }
   ]
 }
