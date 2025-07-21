@@ -178,7 +178,7 @@ client.unfocused #282828 #282828 #666666
 # other binds
 bindsym $mod+w exec qutebrowser
 bindsym $mod+Shift+w exec qutebrowser -p
-bindsym $mod+Shift+d exec discord
+bindsym $mod+Shift+d exec dorion
 bindsym $mod+Shift+s exec flameshot gui
 bindsym $mod+r exec rofi -show drun
 bindsym $mod+period exec rofi -show emoji
