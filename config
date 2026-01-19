@@ -12,7 +12,8 @@
 set $mod Mod4
 
 gaps inner 8
-gaps outer 0
+gaps left 100
+gaps right 100
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -172,24 +173,25 @@ bindsym $mod+Ctrl+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-client.focused #ffb0ce #ffb0ce #282828
+client.focused #ababab #ababab #000000
 client.unfocused #282828 #282828 #666666
 
 # other binds
-bindsym $mod+w exec qutebrowser
-bindsym $mod+Shift+w exec qutebrowser -p
+bindsym $mod+w exec chromium
+bindsym $mod+Shift+w exec chromium --incognito
 bindsym $mod+Shift+d exec dorion
 bindsym $mod+Shift+s exec flameshot gui
 bindsym $mod+r exec rofi -show drun
 bindsym $mod+period exec rofi -show emoji
-bindsym $mod+e exec thunar
+bindsym $mod+e layout toggle tabbed splith
 
 exec xrandr --output eDP-1 --mode 1280x720
 # exec feh --bg-scale ~/Pictures/background.jpg
-exec feh --bg-scale ~/.config/i3/images/background.png
+exec feh --bg-scale ~/.config/i3/images/mountains.jpg
 exec --no-startup-id ~/Scripts/cmus_status.sh
 exec_always --no-startup-ud xset -b
 exec_always xset b off
 exec_always "pgrep polybar >/dev/null 2>&1 && killall polybar && polybar --config=~/.config/i3/polybar/config.ini || polybar --config=~/.config/i3/polybar/config.ini"
-exec_always picom --config ~/.config/i3/picom/picom.conf
+# exec_always picom --config ~/.config/i3/picom/picom.conf
 exec_always "pgrep dunst >/dev/null 2>&1 && pkill dunst && dunst --config ~/.config/i3/dunst/dunstrc|| --no-startup-id dunst --config ~/.config/i3/dunst/dunstrc && dunst --config ~/.config/dunst/dunstrc"
+# exec_always systemctl --user enable opentabletdriver.service --now
